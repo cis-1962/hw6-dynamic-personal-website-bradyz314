@@ -1,3 +1,11 @@
+import Introduction from "./components/Introduction";
+import Posts from "./components/Posts";
+
 export default function App() {
-  return <main>Hello World!</main>;
+  return (
+    <>
+      <Introduction/>
+      <Posts />
+    </>
+  );
 }
