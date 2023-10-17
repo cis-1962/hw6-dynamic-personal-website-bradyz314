@@ -8,8 +8,10 @@ export default function Posts() {
     const posts = useSelector((state: RootState) => state.posts.posts);
     const [adding, setAdding] = useState<boolean>(false);
     return (
-        <>
-            <h1>My Posts!</h1>
+        <div className="flex w-full h-full p-20 ">
+            <h1 className="block text-sky-400 text-left decoration-solid text-3xl">
+                My Posts!
+            </h1>
             <button
                 type='submit'
                 onClick={() => setAdding(true)}
@@ -30,6 +32,6 @@ export default function Posts() {
                     />
                 </div>
             )}
-        </>
+        </div>
     )
 }
