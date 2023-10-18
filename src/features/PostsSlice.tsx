@@ -6,7 +6,6 @@ export interface PostInfo {
     title: string,
     imageUrl: string,
     description: string
-    inEdit?: boolean
 }
 
 export interface PostsState {
@@ -30,7 +29,6 @@ export const postsSlice = createSlice({
                 title,
                 imageUrl: url,
                 description: desc,
-                inEdit: false
             })
             state.id += 1;
         },
